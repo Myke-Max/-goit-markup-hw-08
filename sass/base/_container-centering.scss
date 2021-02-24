@@ -1,0 +1,34 @@
+.container-centering {
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  &__hero {
+    max-width: 696px;
+  }
+
+  @media screen and (min-width: 320px) {
+    width: 320px;
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+
+.page-header__container-centering {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  align-items: center;
+}

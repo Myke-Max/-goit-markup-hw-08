@@ -1,0 +1,37 @@
+.logo {
+  @media screen and(min-width:1200px) {
+    @include font($fs: 26px, $lh: 31px);
+  }
+  @media screen and(min-width: 320px) {
+    @include font($fs: 24px, $lh: 28px);
+  }
+  color: #212121;
+  font-family: var(--logo-font-releway);
+  font-style: normal;
+
+  text-decoration: none;
+  animation-duration: 2000ms;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+
+  &__icon {
+    color: var(--accent-color);
+  }
+}
+
+.navigation__logo-padding {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.logo__icon-ft {
+  color: var(--text-title-white);
+}
+.footer__logo {
+  display: inline-block;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}

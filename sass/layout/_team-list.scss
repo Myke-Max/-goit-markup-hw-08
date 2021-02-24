@@ -1,0 +1,74 @@
+.team-section {
+  background-color: var(--bgc-team);
+}
+
+.team-list {
+  @media screen and(min-width:768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  &__item {
+    @media screen and (min-width: 320px) {
+      margin: 0 0 30px;
+    }
+
+    @media screen and(min-width:768px) {
+      width: calc((100% - 2 * 30px) / 2);
+      margin: 15px;
+    }
+
+    @media screen and(min-width:1200px) {
+      width: calc((100% - 4 * 30px) / 4);
+      margin: 15px;
+    }
+
+    background-color: #fff;
+    width: 100%;
+    margin: 15px;
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+
+  &__img-range {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  &__packing-studio {
+    @media screen and(min-width:320px) {
+      padding: 23px 30px 18px;
+    }
+
+    @media screen and(min-width:480px) {
+      padding: 30px 122px 24px;
+    }
+
+    @media screen and(min-width:768px) {
+      padding: 30px 74px 24px;
+    }
+
+    @media screen and(min-width:1200px) {
+      padding: 30px 32px;
+    }
+  }
+  &__member {
+    @include font($fs: 16px, $fw: 500, $lh: 19px);
+    color: var(--title-text-color);
+
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+
+  &__function {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+
+    margin-top: 0px;
+    margin-bottom: 16px;
+  }
+}
