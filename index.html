@@ -56,20 +56,19 @@
     </header> -->
     <!-- Заголовок качеств -->
         
-            <!-- <section class="hero hero__overlay">
+             <section class="hero hero__overlay">
             
                 <div class="container-centering container-centering__hero">
                         <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
                         <button class="modal__button" data-modal-open>Заказать услугу</button>                   
                 </div>
-            </section> -->
+            </section>
         
 
     <!-- Качества команды -->
     
-     <section class="qualities">
+      <section class="qualities">
             <div class="container-centering">
-         <!-- <h2 class="hide-title"></h2> -->
                     <ul class="qualities-list list">
                         <li class="qualities-list__item">
                             <div class="qualities-list__icon">
@@ -126,25 +125,40 @@
     
             <!-- product-work -->
             
-        <section class="product-work">
+         <section class="product-work">
             <div class="container-centering">
                 <h2 class="product-work__title">Чем мы занимаемся</h2>
                 <ul class="product-work__list product-work__work-list list">
-                    <li class="product-work__item">                       
-                                <img src="./img/our-work/img1.png" alt="Клавиатура и планшет" width="370" height="294">
+                    <li class="product-work__item"> 
+                        <picture>
+                            <source srcset="./img/our-work/our-work1-x1.webp 1x, ./img/our-work/our-work1-x2.webp 2x" media="(min-width:1200px)">
+                            <source srcset="./img/our-work/our-work1-x1.jpg 1x, ./img/our-work/our-work1-x2.jpg 2x" media="(min-width:1200px)">
+                            <img src="./img/our-work/our-work1-x1.jpg" alt="Клавиатура и планшет" >
+                        </picture>                      
+                                
                         <div class="product-work__container">
                                 <p class="product-work__info">Десктопные приложения</p>                           
                         </div>
                         
                     </li>
                     <li class="product-work__item">
-                        <img src="./img/our-work/img2.png" alt="Телефон и компютер" width="370" height="294">
+                        <picture>
+                            <source srcset="./img/our-work/our-work2-x1.webp 1x, ./img/our-work/our-work2-x2.webp 2x" media="(min-width:1200px)">
+                            <source srcset="./img/our-work/our-work2-x1.jpg 1x, ./img/our-work/our-work2-x2.jpg 2x" media="(min-width:1200px)">
+                            <img src="./img/our-work/our-work2-x1.jpg" alt="Телефон и компютер">
+                        </picture>
+                        
                         <div class="product-work__container">
                             <p class="product-work__info">Мобильные приложения</p>
                         </div>
                     </li>
                     <li class="product-work__item">
-                        <img src="./img/our-work/img3.png " alt="Человек и планшет" width="370" height="294">
+                        <picture>
+                            <source srcset="./img/our-work/our-work3-x1.webp 1x, ./img/our-work/our-work3-x2.webp 2x" media="(min-width:1200px)">
+                            <source srcset="./img/our-work/our-work3-x1.jpg 1x, ./img/our-work/our-work3-x2.jpg 2x" media="(min-width:1200px)">
+                                <img src="./img/our-work/our-work3-x1.jpg " alt="Человек и планшет">
+                        </picture>
+                        
                         <div class="product-work__container">
                             <p class="product-work__info">Дизайнерские решения</p>
                         </div>
@@ -157,12 +171,27 @@
 
     <!-- team-section -->
     
-            <section class="team-section">
+             <section class="team-section">
                 <div class="container-centering">
                     <h2 class="team-section__title">Наша Команда</h2>
                         <ul class="team-list list">
                             <li class="team-list__item">
-                                    <img class="team-list__img-range" src="./img/ourteam/Игорь-Демьяненко.jpg" alt="Игорь-Демьяненко" width="270" height="260">
+                                <picture>
+                                    <source srcset="./img/ourteam/team1-x1@1200.webp 1x, ./img/ourteam/team1-x2@1200.webp 2x" media="(min-width:1200px)"
+                                    type="image/webp">
+                                    <source srcset="./img/ourteam/team1-x1@1200.jpg 1x, ./img/ourteam/team1-x2@1200.jpg 2x" media="(min-width:1200px)">
+
+                                    <source srcset="./img/ourteam/team1-x1@768.webp 1x, ./img/ourteam/team1-x2@768.webp 2x" media="(min-width:768px)"
+                                    type="image/webp">
+                                    <source srcset="./img/ourteam/team1-x1@768.jpg 1x, ./img/ourteam/team1-x2@768.jpg 2x" media="(min-width:768px)">
+
+                                    <source srcset="./img/ourteam/team1-x1@480.webp 1x, ./img/ourteam/team1-x2@480.webp 2x" media="(min-width:320px)"
+                                    type="image/webp">
+                                    <source srcset="./img/ourteam/team1-x1@480.jpg 1x, ./img/ourteam/team1-x2@480.jpg 2x" media="(min-width:320px)">
+
+                                    <img class="team-list__img-range" src="./img/ourteam/team1-x1@480.jpg" alt="Игорь-Демьяненко">
+                                </picture>
+                                  
                         <div class="team-list__packing-studio">
                                     <h3 class="team-list__member">Игорь Демьяненко</h3>
                                     <p class="team-list__function">Product Designer</p>
@@ -202,7 +231,21 @@
                                         
 
                             <li class="team-list__item">
-                                <img class="team-list__img-range" src="./img/ourteam/Ольга-Репина.jpg" alt="Ольга-Репина" width="270" height="260">
+                                <picture>
+                                <source srcset="./img/ourteam/team2-x1@1200.webp 1x, ./img/ourteam/team2-x2@1200.webp 2x" media="(min-width:1200px)"
+                                type="image/webp">
+                                <source srcset="./img/ourteam/team2-x1@1200.jpg 1x, ./img/ourteam/team2-x2@1200.jpg 2x" media="(min-width:1200px)">
+
+                                <source srcset="./img/ourteam/team2-x1@768.webp 1x, ./img/ourteam/team2-x2@768.webp 2x" media="(min-width:768px)"
+                                type="image/webp">
+                                <source srcset="./img/ourteam/team2-x1@768.jpg 1x, ./img/ourteam/team2-x2@768.jpg 2x" media="(min-width:768px)">
+                                    
+                                <source srcset="./img/ourteam/team2-x1@480.webp 1x, ./img/ourteam/team2-x2@480.webp 2x" media="(min-width:320px)"
+                                type="image/webp">
+                                <source srcset="./img/ourteam/team2-x1@480.jpg 1x, ./img/ourteam/team2-x2@480.jpg 2x" media="(min-width:320px)">
+                                    <img class="team-list__img-range" src="./img/ourteam/team2-x1@480.jpg" alt="Ольга-Репина">
+                                </picture>
+                               
                             <div class="team-list__packing-studio">
                                     <h3 class="team-list__member">Ольга Репина</h3>
                                     <p class="team-list__function">Frontend Developer</p>
@@ -240,7 +283,21 @@
                             </li>
 
                             <li class="team-list__item">
-                                <img class="team-list__img-range" src="./img/ourteam/Николай-Тарасов.jpg" alt="Николай-Тарасов" width="270" height="260">
+                                <picture>
+                                    <source srcset="./img/ourteam/team3-x1@1200.webp 1x, ./img/ourteam/team3-x2@1200.webp 2x" media="(min-width:1200px)"
+                                        type="image/webp">
+                                    <source srcset="./img/ourteam/team3-x1@1200.jpg 1x, ./img/ourteam/team3-x2@1200.jpg 2x" media="(min-width:1200px)">
+                                    
+                                    <source srcset="./img/ourteam/team3-x1@768.webp 1x, ./img/ourteam/team3-x2@768.webp 2x" media="(min-width:768px)"
+                                        type="image/webp">
+                                    <source srcset="./img/ourteam/team3-x1@768.jpg 1x, ./img/ourteam/team3-x2@768.jpg 2x" media="(min-width:768px)">
+                                    
+                                    <source srcset="./img/ourteam/team3-x1@480.webp 1x, ./img/ourteam/team3-x2@480.webp 2x" media="(min-width:320px)"
+                                        type="image/webp">
+                                    <source srcset="./img/ourteam/team3-x1@480.jpg 1x, ./img/ourteam/team3-x2@480.jpg 2x" media="(min-width:320px)">
+                                    <img class="team-list__img-range" src="./img/ourteam/team3-x1@480.jpg" alt="Николай-Тарасов">
+                                </picture>
+                                
                                 <div class="team-list__packing-studio">
                                     <h3 class="team-list__member">Николай Тарасов</h3>
                                     <p class="team-list__function">Marketing</p>
@@ -277,7 +334,21 @@
                             </li>
 
                             <li class="team-list__item">
-                                <img class="team-list__img-range" src="./img/ourteam/Михаил-Ермаков.jpg" alt="Михаил-Ермаков" width="270" height="260">
+                                <picture>
+                                    <source srcset="./img/ourteam/team4-x1@1200.webp 1x, ./img/ourteam/team4-x2@1200.webp 2x" media="(min-width:1200px)"
+                                        type="image/webp">
+                                    <source srcset="./img/ourteam/team4-x1@1200.jpg 1x, ./img/ourteam/team4-x2@1200.jpg 2x" media="(min-width:1200px)">
+                                    
+                                    <source srcset="./img/ourteam/team4-x1@768.webp 1x, ./img/ourteam/team4-x2@768.webp 2x" media="(min-width:768px)"
+                                        type="image/webp">
+                                    <source srcset="./img/ourteam/team4-x1@768.jpg 1x, ./img/ourteam/team4-x2@768.jpg 2x" media="(min-width:768px)">
+                                    
+                                    <source srcset="./img/ourteam/team4-x1@480.webp 1x, ./img/ourteam/team4-x2@480.webp 2x" media="(min-width:320px)"
+                                        type="image/webp">
+                                    <source srcset="./img/ourteam/team4-x1@480.jpg 1x, ./img/ourteam/team4-x2@480.jpg 2x" media="(min-width:320px)">
+                                    <img class="team-list__img-range" src="./img/ourteam/team4-x1@480.jpg" alt="Михаил-Ермаков">
+                                </picture>
+                               
                                 <div class="team-list__packing-studio">
                                     <h3 class="team-list__member">Михаил Ермаков</h3>
                                     <p class="team-list__function">UI Designer</p>

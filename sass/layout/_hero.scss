@@ -1,16 +1,53 @@
 .hero {
   background-color: var(--background-color-blue);
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+
+  @media screen and(min-width:1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 
   &__overlay {
-    max-width: 1600px;
-    height: 600px;
+    max-width: 480px;
+    height: 400px;
     margin-left: auto;
     margin-right: auto;
-    background-image: var(--overlay-gradient), url("../img/hero/bgi-hero.jpg");
     background-position: center;
     background-repeat: no-repeat;
+    background-image: var(--overlay-gradient),
+      url("../img/hero/hero-x1@480.jpg");
+    background-size: cover;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url("../img/hero/hero-x2@480.jpg");
+    }
+
+    @media screen and(min-width:768px) {
+      max-width: 768px;
+      background-image: var(--overlay-gradient),
+        url("../img/hero/hero-x1@768.jpg");
+
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url("../img/hero/hero-x2@768.jpg");
+      }
+    }
+    @media screen and (min-width: 1200px) {
+      max-width: 1600px;
+      height: 600px;
+      background-image: var(--overlay-gradient),
+        url("../img/hero/hero-x1@1200.jpg");
+
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url("../img/hero/hero-x2@1200.jpg");
+      }
+    }
   }
 }
