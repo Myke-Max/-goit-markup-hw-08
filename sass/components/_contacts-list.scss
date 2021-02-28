@@ -1,11 +1,28 @@
 .contacts-list {
-  @include font($fs: 14px, $fw: 500, $lh: 16px, $ls: 0.02em);
+  display: none;
+  @media screen and(min-width:768px) {
+    display: inline-block;
+    @include font($fs: 12px, $fw: 500, $lh: 14px, $ls: 0.02em);
+  }
+  @media screen and(min-width:1200px) {
+    display: flex;
+    @include font($fs: 14px, $fw: 500, $lh: 16px, $ls: 0.02em);
+  }
 
-  display: flex;
   margin-left: auto;
 
-  &__item:not(:last-child) {
-    margin-right: 50px;
+  &__item {
+    &:first-child {
+      @media screen and(max-width:1199px) {
+        margin-bottom: 10px;
+      }
+    }
+
+    &:not(:last-child) {
+      @media screen and (min-width: 1200px) {
+        margin-right: 50px;
+      }
+    }
   }
 
   &__link {
@@ -14,8 +31,10 @@
     color: var(--general-color-text);
     text-decoration: none;
 
-    padding-top: 24px;
-    padding-bottom: 25px;
+    @media screen and (min-width: 1200px) {
+      padding-top: 24px;
+      padding-bottom: 25px;
+    }
 
     transition: color var(--timing-function) var(--timing250ms);
 
@@ -27,17 +46,34 @@
 
   &__icon-tel,
   &__icon-mail {
+    margin-right: 8px;
     fill: currentColor;
-    margin-right: 10px;
+    @media screen and (min-width: 1200px) {
+      margin-right: 10px;
+    }
   }
   &__icon-mail {
-    width: 16px;
-    height: 12px;
+    @media screen and(min-width:768px) {
+      width: 14px;
+      height: 10px;
+    }
+
+    @media screen and(min-width:1200px) {
+      width: 16px;
+      height: 12px;
+    }
   }
 
   &__icon-tel {
-    width: 10px;
-    height: 16px;
+    @media screen and(min-width:768px) {
+      width: 10px;
+      height: 14px;
+    }
+
+    @media screen and(min-width:1200px) {
+      width: 10px;
+      height: 16px;
+    }
   }
 }
 
