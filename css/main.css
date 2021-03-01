@@ -362,7 +362,7 @@ button {
 
 @media screen and (min-width: 480px) {
   .container-centering {
-    width: 450px;
+    width: 480px;
     margin: 0 auto;
   }
 }
@@ -476,6 +476,12 @@ button {
   color: var(--title-text-color);
   margin-top: 30px;
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .qualities-list__title {
+    text-align: center;
+  }
 }
 
 .logo {
@@ -1010,7 +1016,7 @@ button {
     display: none;
   }
   .mobile-menu {
-    position: fixed;
+    position: absolute;
     z-index: 1;
     top: 0;
     left: 50%;
@@ -1653,6 +1659,7 @@ button {
   padding: 10px 32px;
   cursor: pointer;
   min-width: 200px;
+  height: 50px;
 }
 
 .form {
