@@ -1475,6 +1475,10 @@ button {
   }
 }
 
+.portfolio__card {
+  border: 1px solid #eeeeee;
+}
+
 @media screen and (min-width: 320px) {
   .portfolio__card {
     margin: 0 0 30px;
@@ -1492,7 +1496,6 @@ button {
   .portfolio__card {
     width: calc((100% - 3 * 30px) / 3);
     margin: 15px;
-    border: 1px solid #eeeeee;
   }
 }
 
@@ -1639,7 +1642,6 @@ button {
     width: 90%;
     max-width: 450px;
     height: 95%;
-    overflow: scroll;
   }
 }
 
