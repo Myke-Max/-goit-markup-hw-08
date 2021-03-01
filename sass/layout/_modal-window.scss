@@ -23,18 +23,19 @@
   }
 
   @media screen and(min-width:768px) {
-    width: 450px;
-    height: 609px;
+    width: 90%;
+    max-width: 450px;
+    height: 95%;
+    overflow: scroll;
   }
   @media screen and(min-width:1200px) {
     width: 528px;
-    height: 581px;
   }
   display: block;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1);
   background-color: var(--text-title-white);
   transition: opacity var(--timing250ms) var(--timing-function);
   padding: 40px;
