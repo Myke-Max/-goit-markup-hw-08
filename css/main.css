@@ -1467,7 +1467,7 @@ button {
   flex-wrap: wrap;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 320px) {
   .portfolio {
     margin: -15px;
   }
@@ -1478,8 +1478,9 @@ button {
 }
 
 @media screen and (min-width: 320px) {
-  .portfolio__card:not(:last-child) {
-    margin: 0 0 30px;
+  .portfolio__card {
+    width: calc((100% - 2 * 15px) / 1);
+    margin: 15px;
   }
 }
 
