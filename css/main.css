@@ -1020,22 +1020,24 @@ button {
     z-index: 1;
     top: 0;
     left: 50%;
-    transform: translateX(-50%) translateY(-100%);
+    transform: translateX(-50%) translateY(-100%) scale(0);
     width: 100%;
     max-width: 480px;
     height: 100vh;
     background-color: var(--text-title-white);
     padding: 48px 40px;
-    transition: var(--timing250ms) var(--timing-function);
+    transition: 500ms var(--timing-function);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
   }
   .mobile-menu.is-open {
-    transform: translateX(-50%) translateY(0%);
+    transform: translateX(-50%) translateY(0%) scale(1);
   }
   .mobile-menu__btn-close, .mobile-menu__burger-btn {
+    width: 40px;
+    height: 40px;
     background-color: transparent;
     border: none;
     padding: 0;
@@ -1045,9 +1047,12 @@ button {
     height: 16px;
     fill: #000000;
   }
+  .mobile-menu__icon-close:hover, .mobile-menu__icon-close:focus, .mobile-menu__burger-icon:hover, .mobile-menu__burger-icon:focus {
+    fill: var(--accent-color);
+  }
   .mobile-menu__btn-close {
     position: absolute;
-    top: 20px;
+    top: 15px;
     right: 15px;
   }
   .mobile-menu__item:not(:last-child) {
@@ -1466,7 +1471,6 @@ button {
 .portfolio {
   display: flex;
   flex-wrap: wrap;
-  padding: 10px;
 }
 
 @media screen and (min-width: 767px) {
