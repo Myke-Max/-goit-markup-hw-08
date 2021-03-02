@@ -1417,7 +1417,6 @@ button {
 
 @media screen and (max-width: 479px) {
   .clients-list__item {
-    margin: 0;
     margin-bottom: 30px;
   }
 }
