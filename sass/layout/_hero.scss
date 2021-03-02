@@ -10,6 +10,7 @@
   }
 
   &__overlay {
+    width: 100%;
     max-width: 480px;
     height: 400px;
     margin-left: auto;
@@ -27,6 +28,7 @@
     }
 
     @media screen and(min-width:768px) {
+      width: 100%;
       max-width: 768px;
       background-image: var(--overlay-gradient),
         url("../img/hero/hero-x1@768.jpg");
