@@ -963,7 +963,7 @@ button {
 
 .hero__overlay {
   width: 100%;
-  max-width: 480px;
+  max-width: 767px;
   height: 400px;
   margin-left: auto;
   margin-right: auto;
@@ -982,7 +982,7 @@ button {
 @media screen and (min-width: 768px) {
   .hero__overlay {
     width: 100%;
-    max-width: 768px;
+    max-width: 1199px;
     background-image: var(--overlay-gradient), url("../img/hero/hero-x1@768.jpg");
   }
 }
@@ -1633,6 +1633,14 @@ button {
   padding: 40px;
 }
 
+@media screen and (max-width: 1199px) {
+  .modal {
+    max-width: 450px;
+    height: 95%;
+    overflow: scroll;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .modal {
     width: 90%;
@@ -1642,17 +1650,10 @@ button {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .modal {
-    width: 90%;
-    max-width: 450px;
-    height: 95%;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
+    overflow: hidden;
   }
 }
 

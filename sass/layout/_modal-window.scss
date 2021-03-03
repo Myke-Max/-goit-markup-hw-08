@@ -15,6 +15,12 @@
 }
 
 .modal {
+  @media screen and(max-width:1199px) {
+    max-width: 450px;
+    height: 95%;
+    overflow: scroll;
+  }
+
   @media screen and(max-width:767px) {
     width: 90%;
     max-width: 450px;
@@ -22,14 +28,10 @@
     overflow: scroll;
   }
 
-  @media screen and(min-width:768px) {
-    width: 90%;
-    max-width: 450px;
-    height: 95%;
-    
-  }
   @media screen and(min-width:1200px) {
     width: 528px;
+
+    overflow: hidden;
   }
   display: block;
   position: absolute;
